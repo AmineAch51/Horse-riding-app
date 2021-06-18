@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">MonitorApp</string>
+    <string-array name="option_day_or_week">
+        <item>day</item>
+        <item>week</item>
+    </string-array>
+    <string-array name="option_monitor_or_client_or_all">
+        <item>all</item>
+        <item>seance</item>
+        <item>task</item>
+    </string-array>
+    <string-array name="years">
+        <item>2019</item>
+        <item>2020</item>
+        <item>2021</item>
+        <item>2022</item>
+        <item>2023</item>
+        <item>2024</item>
+        <item>2025</item>
+        <item>2026</item>
+        <item>2027</item>
+        <item>2028</item>
+    </string-array>
+    <string-array name="types">
+        <item>seance</item>
+        <item>task</item>
+    </string-array>
+</resources>

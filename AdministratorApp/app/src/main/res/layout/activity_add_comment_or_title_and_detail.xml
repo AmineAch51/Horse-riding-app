@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/house_img"
+    tools:context=".add_comment_or_title_and_detail">
+
+    <ImageView
+        android:id="@+id/ret"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:contentDescription="TODO"
+        android:onClick="Return"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/ic_back_arrow_white_color"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,OnClick" />
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/ret"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"
+        android:hint="Title"
+        tools:ignore="MissingConstraints" />
+    <EditText
+        android:id="@+id/detail"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:gravity="top"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"
+        android:hint="Detail"
+        tools:ignore="MissingConstraints" />
+    <EditText
+        android:id="@+id/comment"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:gravity="top"
+        app:layout_constraintTop_toBottomOf="@id/ret"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"
+        android:hint="Comment"
+        tools:ignore="MissingConstraints"
+        android:visibility="invisible"
+        android:autofillHints="" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="10dp"
+        android:width="320dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/exofont"
+        android:background="@drawable/bottom0"
+        android:onClick="Save"
+        tools:ignore="MissingConstraints,OnClick" />
+</androidx.constraintlayout.widget.ConstraintLayout>
